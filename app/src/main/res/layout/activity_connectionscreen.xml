@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="connectionscreenVM" type="com.chechirkinbogdsapplication.app.modules.connectionscreen.data.viewmodel.ConnectionscreenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearWifi"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+            <LinearLayout
+                android:id="@+id/linearColumnguidewifitex"
+                style="@style/groupStylebluegray_700"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtGuideWifiTex"
+                    style="@style/txtCrimsonTextregular24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_88pxh"
+                    android:layout_marginTop="@dimen/_146pxv"
+                    android:layout_marginEnd="@dimen/_88pxh"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:text="@{connectionscreenVM.connectionscreenModel.txtGuideWifiTex}"
+                    tools:text="@string/msg" />
+
+                <TextView
+                    android:id="@+id/txtInformationCon"
+                    style="@style/txtCrimsonTextregular24_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_62pxh"
+                    android:layout_marginTop="@dimen/_114pxv"
+                    android:layout_marginEnd="@dimen/_62pxh"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:lineSpacingExtra="@dimen/_8pxh"
+                    android:singleLine="true"
+                    android:text="@{connectionscreenVM.connectionscreenModel.txtInformationCon}"
+                    tools:text="@string/msg2" />
+
+                <FrameLayout
+                    android:id="@+id/frameStackroundedrectang"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_132pxv"
+                    android:layout_marginTop="@dimen/_230pxv"
+                    android:gravity="start">
+
+                    <FrameLayout
+                        android:id="@+id/frameLowBarWifiCo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_132pxv"
+                        android:layout_gravity="start">
+
+                        <ImageView
+                            android:id="@+id/imageRoundedrectang"
+                            cornerRadius="@{@dimen/_16pxh}"
+                            imageRes="@{@drawable/img_roundedrectang}"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_105pxv"
+                            android:layout_gravity="bottom|start"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:scaleType="fitXY"
+                            tools:ignore="ContentDescription"
+                            tools:src="@drawable/img_roundedrectang" />
+
+                        <ImageView
+                            android:id="@+id/imageOnActiveeleme"
+                            android:layout_width="@dimen/_104pxh"
+                            android:layout_height="@dimen/_75pxh"
+                            android:layout_gravity="top|end"
+                            android:layout_marginStart="@dimen/_42pxh"
+                            android:layout_marginEnd="@dimen/_42pxh"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_onactiveeleme"
+                            tools:ignore="ContentDescription"
+                            tools:src="@drawable/img_onactiveeleme" />
+
+                        <View
+                            android:id="@+id/viewOnActiveelemeOne"
+                            android:layout_width="@dimen/_40pxh"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_gravity="top|end"
+                            android:layout_marginStart="@dimen/_74pxh"
+                            android:layout_marginTop="@dimen/_25pxv"
+                            android:layout_marginEnd="@dimen/_74pxh"
+                            android:layout_marginBottom="@dimen/_25pxv"
+                            android:background="@drawable/rectangle_bg_bluegray_900_radius_20" />
+
+                        <ImageView
+                            android:id="@+id/imageIconGroup"
+                            android:layout_width="@dimen/_233pxh"
+                            android:layout_height="@dimen/_36pxh"
+                            android:layout_gravity="top|center"
+                            android:layout_marginStart="@dimen/_76pxh"
+                            android:layout_marginTop="@dimen/_36pxv"
+                            android:layout_marginEnd="@dimen/_76pxh"
+                            android:layout_marginBottom="@dimen/_36pxv"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_icongroup"
+                            tools:ignore="ContentDescription"
+                            tools:src="@drawable/img_icongroup" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearRowmain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_38pxh"
+                        android:layout_marginTop="@dimen/_31pxv"
+                        android:layout_marginEnd="@dimen/_38pxh"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtMain"
+                            style="@style/txtKyivTypeSerifkyivtypeserifregular16"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_weight="0.25"
+                            android:ellipsize="end"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:singleLine="true"
+                            android:text="@{connectionscreenVM.connectionscreenModel.txtMain}"
+                            tools:text="@string/lbl" />
+
+                        <TextView
+                            android:id="@+id/txtLight"
+                            style="@style/txtKyivTypeSerifkyivtypeserifregular16"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_24pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_weight="0.35"
+                            android:ellipsize="end"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:singleLine="true"
+                            android:text="@{connectionscreenVM.connectionscreenModel.txtLight}"
+                            tools:text="@string/lbl2" />
+
+                        <TextView
+                            android:id="@+id/txtConnect"
+                            style="@style/txtKyivTypeSerifkyivtypeserifregular16"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_weight="0.4"
+                            android:ellipsize="end"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:singleLine="true"
+                            android:text="@{connectionscreenVM.connectionscreenModel.txtConnect}"
+                            tools:text="@string/lbl3" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

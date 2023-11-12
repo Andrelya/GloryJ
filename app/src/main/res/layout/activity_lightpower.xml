@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="lightpowerVM" type="com.chechirkinbogdsapplication.app.modules.lightpower.data.viewmodel.LightpowerVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLightPower"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPowerLightPer"
+            style="@style/groupStylecornerRadius"
+            itemSpace="@{@dimen/_38pxh}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="5"
+            tools:listitem="@layout/row_powerlightper" />
+    </LinearLayout>
+</layout>
